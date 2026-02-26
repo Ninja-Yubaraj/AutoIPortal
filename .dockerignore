@@ -15,4 +15,4 @@ docker-compose.yml
 README.md
 
 # Logs
-AutoIPortal.log
+*.log

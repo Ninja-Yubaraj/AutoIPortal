@@ -13,7 +13,9 @@ LOGFILE="AutoIPortal.log"
 # Function to log messages with timestamps
 log_message() {
   local MSG="$1"
-  echo "$(date '+%Y-%m-%d %H:%M:%S') - $MSG" >> "$LOGFILE"
+  local LINE="$(date '+%Y-%m-%d %H:%M:%S') - $MSG"
+  echo "$LINE"
+  # echo "$LINE" >> "$LOGFILE"    # Uncomment for local log files.
 }
 
 # Function that performs the login
