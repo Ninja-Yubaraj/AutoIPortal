@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 
 # Replace with actual credentials
-USER_ID=""
-PASSWORD=""
+USER_ID="${P_USER_ID}"
+PASSWORD="${P_PASSWORD}"
 
 # The access portal URL
-PORTAL_URL="http://10.254.254.41/0/up/"
+PORTAL_URL="${P_URL}"
 
 # Log file location
-LOGFILE="/var/log/portal-check.log"
+LOGFILE="AutoIPortal.log"
 
 # Function to log messages with timestamps
 log_message() {
